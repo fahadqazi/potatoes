@@ -5,11 +5,11 @@ import CourseListRow from './CardListRow';
 const CardList = ({data}) => {
   console.log(data);
   return(
-    <ul style={{listStyleType:'none'}}>
+    <div style={{border:'2px solid goldenRod'}}>
     {data.map((item, index) =>
       <CourseListRow key={index} item={item}/>
     )}
-    </ul>
+    </div>
   )
 }
 
