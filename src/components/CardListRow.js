@@ -35,7 +35,7 @@ const CardListRow = ({ item }) => {
 
         <div>
           <img
-            style={{ width: 120, height: 120, border: "1px solid black" }}
+            style={{ width: 120, height: 120}}
             src={item.media.m}
           />
         </div>
