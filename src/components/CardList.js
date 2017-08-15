@@ -6,9 +6,9 @@ const CardList = ({data}) => {
   console.log(data);
   return(
     <div style={{border:'2px solid goldenRod'}}>
-    {data.map((item, index) =>
-      <CourseListRow key={index} item={item}/>
-    )}
+      {data.map((item, index) =>
+        <CourseListRow key={index} item={item}/>
+      )}
     </div>
   )
 }
