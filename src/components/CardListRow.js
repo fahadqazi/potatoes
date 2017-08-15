@@ -1,4 +1,5 @@
 import React from "react";
+import truncate from 'html-truncate';
 
 const CardListRow = ({ item }) => {
   const dated = item.published
@@ -41,7 +42,7 @@ const CardListRow = ({ item }) => {
         </div>
 
         <div style={{displayDirection:'column'}}>
-          <span style={{paddingLeft: 10, fontSize: 20}}><a href="">{item.title}</a></span>
+          <span style={{paddingLeft: 10, fontSize: 20, textOverflow: 'ellipsis'}}><a href="">{truncate(item.title, 30)}</a></span>
 
           <div style={{padding: 10}}>
 
