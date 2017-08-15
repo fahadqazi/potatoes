@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ItemIamge = (props) => {
+const ItemImage = (props) => {
   return(
     <div>
       <img style={{ width: 120, height: 120 }} src={props.image} />
@@ -8,4 +8,4 @@ const ItemIamge = (props) => {
   );
 }
 
-export default ItemIamge;
+export default ItemImage;
