@@ -27,6 +27,7 @@ class App extends Component {
 }
 
 function mapStateToProps(state){
+  console.log('map state: ', state)
   return {
     item: state.item
   }
