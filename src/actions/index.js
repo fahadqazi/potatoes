@@ -7,10 +7,9 @@ const ROOT_URL = "https://api.flickr.com/services/feeds/photos_public.gne?tags=p
 
 export function fetchData(){
 
-    const request = $.getJSON(ROOT_URL).done(response => {
-      console.log('response: ', response.items);
-      return response.items
-    });
+    var request = fetch(ROOT_URL, {mode: 'no-cors'}).then((response) => {
+      console.log('resposne: ', response);
+     });
 
 
     return {
